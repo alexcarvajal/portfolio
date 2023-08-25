@@ -1,0 +1,9 @@
+.ProjectWrapper {
+  margin-top: -1rem;
+}
+
+@media (max-width: 1000px) {
+  .Container {
+    padding: 0;
+  }
+}
