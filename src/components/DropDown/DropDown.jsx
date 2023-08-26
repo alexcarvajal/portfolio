@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
 import { Link as ScrollLink } from 'react-scroll';
@@ -10,12 +11,12 @@ const SiderBar = styled.div`
   /* top: 0; */
   left: 0;
   z-index: 999;
-  transition: 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  opacity: ${({isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
@@ -97,4 +98,5 @@ function DropDown({ isOpen, toggle }) {
         </SiderBar>
     )
 }
+
 export default DropDown;

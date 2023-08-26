@@ -56,7 +56,7 @@ function FixSocialIcon() {
         <SocialContainer>
             <ScrollAnimation animateIn="fadeIn" animateOnce={true} >
                 <ul>
-                    <li className="item">
+                    <li className="item" >
                         <a href="https://www.linkedin.com/in/alex-carvajal-2542a7129/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin />
                         </a>

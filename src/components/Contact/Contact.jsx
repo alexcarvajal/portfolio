@@ -3,9 +3,13 @@ import { ContactWrapper,Email } from "./ContactElements";
 import { MdContentCopy } from "react-icons/md";
 import Zoom from '@mui/material/Zoom';
 import { IconButton, Tooltip } from "@mui/material";
-import ScrollAnimation from "react-animate-on-scroll";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function Contact() {
+    useEffect(() => {
+        Aos.init({duration:1000})
+    }, []);
     const [showTooltip, setShowTooltip] = useState(false);
     const copyToClipboard = () => {
         navigator.clipboard.writeText("alex98.acf@gmail.com");
@@ -14,13 +18,12 @@ function Contact() {
           setShowTooltip(false);
         }, 700);
       };
-    
     return (
         <ContactWrapper id="contact">
 
         <div className="Container">
           <div className="SectionTitle">Get In Touch</div>
-          <ScrollAnimation animateIn="fadeIn" >
+          <div data-aos="fade-up" >
             <div className="BigCard">
               <Email>
                 <div style={{ display: 'flex', alignItems: 'center', columnGap: '20px', rowGap: '10px', flexWrap: 'wrap', justifyContent: 'center' }} >
@@ -53,7 +56,7 @@ function Contact() {
                 </a>
               </Email>
             </div>
-          </ScrollAnimation>
+          </div>
   
         </div>
         </ContactWrapper>
