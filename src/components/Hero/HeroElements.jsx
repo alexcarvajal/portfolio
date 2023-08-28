@@ -10,7 +10,6 @@ export const HeroContainer = styled.div`
   margin-left: auto;
   display: flex;
   flex-direction: column;
-
   @media (min-width: 576px) {
     max-width: 540px;
   }

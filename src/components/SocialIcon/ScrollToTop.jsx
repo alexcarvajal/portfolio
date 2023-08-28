@@ -24,7 +24,7 @@ function ScrollToTop(){
 
     const handleClick = () => {
         setOpen(false);
-        scroll.scrollToTop({ duration: 1000 });
+        scroll.scrollToTop({ duration: 0 });
     };
     useEffect(() => {
         const handleScroll = () => {

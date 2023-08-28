@@ -2,8 +2,8 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 function Projects(){
     return(
         <>
-          <svg
-        height="100%"
+      {/*     <svg
+        height="20%"
         width="100%"
         id="svg"
         viewBox="0 0 1440 400"
@@ -16,7 +16,7 @@ function Projects(){
           fill="#151418ff"
           transform="rotate(-180 720 200)"
         ></path>
-      </svg>
+      </svg> */}
       <div className="ProjectWrapper" id="projects">
         <div className="Container">
           <div className="SectionTitle">Projects</div>

@@ -1,7 +1,7 @@
 import { stackList } from "../../data/ProjectData";
 import { useEffect } from "react";
 import {
-    Image,
+    /* Image */
     Technologies,
     Tech,
     TechImg,
@@ -13,44 +13,42 @@ import "aos/dist/aos.css";
 
 function About() {
     useEffect(() => {
-        AOS.init({duration:1000})
+        AOS.init({ duration: 1000 })
     }, []);
     return (
         <ContactWrapper id="about">
             <div className="Container">
                 <div className="SectionTitle">About Me</div>
                 <div className="BigCard">
-                    <div data-aos ="fade-left">
-                        <Image
+                    <div data-aos="fade-left">
+                        {/*  <Image
                             src="/man-svgrepo-com.svg"
                             alt="man-svgrepo"
-                        />
+                        /> */}
                     </div>
                     <div className="AboutBio">
-                        <div data-aos ="fade-left">
-                            Hello! My name is <strong>Pedro Muniz</strong>. I'm originally from Brazil and have been living in Canada for the past three years. During my time here, I gained valuable experience through various entry-level positions, which greatly enhanced my work ethic, communication skills, and adaptability.
+                        <div data-aos="fade-left">
+                            I'm Alex, a 25 year old web and mobile app developer from Colombia. I'm currently in my last semester of Electronic and Telecommunication Engineering, a degree that has allowed me to acquire solid knowledge to perform in the technological field.
                         </div>
-
-                        <br /><br />
-
-                        <div data-aos ="fade-left">
-                            My journey into the world of technology began with a strong passion for problem-solving, which led me to pursue the Computer Systems Technology program. Despite its challenges, I remained determined and forged lasting friendships that supported me throughout this demanding program.
-                            Throughout my studies at BCIT, I had the opportunity to engage in fascinating projects. Notably, I contributed to the development of the RENR Safety App and MyMind, projects that garnered recognition from my colleagues, instructors, and clients alike.
+                        <br />
+                        <div data-aos="fade-left">
+                            I have experience in front-end development, creating responsive web applications in HTML, CSS and JavaScript under the mobile first concept. Additionally, I have knowledge in the React framework and in developing native mobile apps with React Native. I have also dabbled in Flutter for multiplatform apps.
                         </div>
-
-                        <br /><br />
-
-                        <div data-aos ="fade-left">
-                            Working collaboratively within a team towards a shared objective has been an incredibly rewarding and unique experience for me. I am eager to continue exploring exciting projects in the future, with a particular interest in web development and cross-platform mobile development.
-                            <div className="tagline2">
-                                I have become confident using the following technologies:
-                            </div>
+                        <br />
+                        <div data-aos="fade-left">
+                            I consider myself a proactive developer, focused on teamwork and providing efficient solutions to technical problems. I'm good at communicating and relating to others, which allows me to contribute to the coordination of agile projects with methodologies such as Scrum.
+                        </div>
+                        <br />
+                        <div data-aos="fade-left">
+                            I'm constantly looking for new challenges that allow me to continue growing as a professional. I'm motivated to expand my technological knowledge and be at the forefront, in order to easily adapt to different contexts and needs.                        </div>
+                        <div className="tagline2">
+                            I have become confident using the following technologies:
                         </div>
 
 
                         <Technologies>
                             {stackList.map((stack, index) => (
-                                <div data-aos ="fade-left" key={index}>
+                                <div data-aos="fade-left" key={index}>
                                     <Tech key={index} className="tech">
                                         <TechImg src={stack.img} alt={stack.name} />
                                         <TechName>{stack.name}</TechName>

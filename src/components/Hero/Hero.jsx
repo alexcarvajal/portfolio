@@ -5,17 +5,15 @@ import {
     HeroContainer,
     HeroWrapper,
     HeroLeft,
-    HeroRight,
-    Image,
-    ScrollDown,
-    ScrollLink,
+  /*   HeroRight,
+    Image, */
 } from "./HeroElements";
 import { TypeAnimation } from "react-type-animation";
 import  ScrollAnimation  from "react-animate-on-scroll";
 function Hero() {
     const [isOpen, setIsOpen] = useState(false);
     const [showSubtitle, setShowSubtitle] = useState(false);
-    const [showScrollDown, setShowScrollDown] = useState(false);
+ /*    const [showScrollDown, setShowScrollDown] = useState(false); */
 
     const toggle = () => {
         setIsOpen(!isOpen);
@@ -36,6 +34,7 @@ function Hero() {
                                 wrapper="h1"
                                 repeat={0}
                             />
+                            <br />
                             {showSubtitle &&
                                 <TypeAnimation
                                     cursor={true}
@@ -43,41 +42,16 @@ function Hero() {
                                         500,
                                         'A Frontend Developer.',
                                         1000,
-                                        'A Electronic and Engineering Student.',
+                                        'An Electronic and Engineering Student.',
                                         // 'I design and code beautifully simple things, and I love what I do.',
-                                        1000,
-                                        'A problem solver.',
                                         1000,
                                         'An innovative thinker.',
                                         1000,
-                                        'A....',
+                                        'A problem solver.',
                                         1000,
-                                        'A.... cool guy?',
+                                        'A team worker',
                                         1000,
-                                        "Ok...",
-                                        1000,
-                                        "Ok...  I'm running out of ideas...",
-                                        1000,
-                                        "Uhh...",
-                                        1000,
-                                        "Uhh... you can scroll down to see my projects now...",
-                                        300,
-                                        () => setShowScrollDown(true),
-                                        1000,
-                                        "Seriously, my projects are really cool, go check them out!",
-                                        1000,
-                                        "You're uh...",
-                                        1000,
-                                        "You're uh... still here?",
-                                        1000,
-                                        "Ok, this has been fun, but I'm gonna restart the loop now...",
-                                        // 1000,
-                                        // "Or...",
-                                        // 1000,
-                                        // "Or... I could scroll you by force! Muahaha!",
-                                        1000,
-                                        "See ya! :)",
-                                        500,
+
                                     ]}
                                     speed={50}
                                     deletionSpeed={65}
@@ -87,15 +61,15 @@ function Hero() {
                             }
                         </ScrollAnimation>
                     </HeroLeft>
-                    <HeroRight>
+                    {/* <HeroRight>
                         <ScrollAnimation animateIn="fadeIn">
-                       {/*      <Image
+                           <Image
                                 src="/man-svgrepo-com.svg"
-                            /> */}
+                            /> 
                         </ScrollAnimation>
-                    </HeroRight>
+                    </HeroRight> */}
                 </HeroWrapper>
-                {showScrollDown && <ScrollAnimation animateIn="flipInX" offset={0}>
+              {/*   {showScrollDown && <ScrollAnimation animateIn="flipInX" offset={0}>
                     <ScrollDown to="projects" id="scrollDown">
                        <ScrollLink>
                             Scroll down
@@ -104,7 +78,7 @@ function Hero() {
                             />
                         </ScrollLink>
                     </ScrollDown>
-                </ScrollAnimation>}
+                </ScrollAnimation>} */}
             </HeroContainer>
         </main>
     )
