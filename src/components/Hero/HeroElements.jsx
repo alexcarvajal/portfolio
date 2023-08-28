@@ -28,7 +28,6 @@ export const HeroContainer = styled.div`
 export const HeroWrapper = styled.div`
   display: flex;
   flex-direction: row;
-
   @media screen and (max-width: 992px) {
     flex-direction: column;
   }

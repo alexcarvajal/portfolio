@@ -10,6 +10,7 @@ const SocialContainer = styled.div`
 
   ul {
     display: block;
+    list-style: none;
   }
 
   .item + .item {

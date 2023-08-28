@@ -5,9 +5,10 @@ import Contact from "../components/Contact/Contact";
 import FixSocialIcon from "../components/SocialIcon/FixSocialIcon";
 import Footer from "../components/Footer/Footer";
 import ScrollToTop from "../components/SocialIcon/ScrollToTop";
+import './home.css'
 function Home(){
     return(
-        <div>
+        <div className="Home">
             <Hero />
             <Projects />
             <About /> 

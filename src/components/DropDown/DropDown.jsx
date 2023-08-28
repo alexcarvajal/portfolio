@@ -66,6 +66,7 @@ function DropDown({ isOpen, toggle }) {
                     onClick={toggle}
                     className='menu-item'
                     to='projects'
+                    smooth={true}
                 >
                     Projects
                 </NavLink>
