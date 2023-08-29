@@ -74,11 +74,17 @@ export const HeroRight = styled.div`
   flex: 1;
   justify-content: center;
   display: flex;
+
+  }
+
+  }
 `;
 
 export const Image = styled.img`
   height: 300px;
   width: auto;
+  @media (min-width: 576px) {
+    max-width: 150px;
 `;
 
 const ScrollAnimation = keyframes`
