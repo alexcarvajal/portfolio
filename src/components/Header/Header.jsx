@@ -22,7 +22,7 @@ const Header = ({ toggle }) => {
                         rel="noopener noreferrer" 
                         download={true}
                     >
-                        View CV
+                        Download CV
                     </a>
                 </NavBtn>
                 <Bars onClick={toggle} />
