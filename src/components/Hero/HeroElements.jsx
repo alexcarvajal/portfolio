@@ -1,4 +1,4 @@
-import styled,{keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link as LinkScroll } from 'react-scroll';
 
 export const HeroContainer = styled.div`
@@ -84,7 +84,8 @@ export const Image = styled.img`
   height: 300px;
   width: auto;
   @media (min-width: 576px) {
-    max-width: 150px;
+    max-width: 100px;
+  }
 `;
 
 const ScrollAnimation = keyframes`
