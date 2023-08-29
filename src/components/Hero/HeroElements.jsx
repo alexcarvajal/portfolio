@@ -83,7 +83,7 @@ export const HeroRight = styled.div`
 export const Image = styled.img`
   height: 300px;
   width: auto;
-  @media (min-width: 576px) {
+  @media (min-width: 700px) {
     max-height: 100px;
   }
 `;
