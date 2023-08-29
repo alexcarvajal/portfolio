@@ -1,4 +1,4 @@
-import { Nav, NavLink, Bars, NavMenu} from "./HeaderElements";
+import { Nav, NavLink, Bars, NavMenu, NavBtn} from "./HeaderElements";
 const Header = ({ toggle }) => {
     return (
         <div className="Container" style={{ padding: 0 }}>
@@ -14,16 +14,17 @@ const Header = ({ toggle }) => {
                         Contact
                     </NavLink>
                 </NavMenu>
-               {/*  <NavBtn>
+                <NavBtn>
                     <a
                         className="btn PrimaryBtn"
-                        href="."
+                        href="/AlexCarvajal.pdf.pdf"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener noreferrer" 
+                        
                     >
-                        Download CV
+                        View CV
                     </a>
-                </NavBtn> */}
+                </NavBtn>
                 <Bars onClick={toggle} />
             </Nav>
         </div>
