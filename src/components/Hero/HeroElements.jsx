@@ -84,7 +84,7 @@ export const Image = styled.img`
   height: 300px;
   width: auto;
   @media (max-width: 700px) {
-    max-height: 100px;
+    max-height: 180px;
   }
 `;
 
