@@ -20,7 +20,7 @@ const Header = ({ toggle }) => {
                         href="/AlexCarvajal.pdf.pdf"
                         target="_blank"
                         rel="noopener noreferrer" 
-                        
+                        download={true}
                     >
                         View CV
                     </a>
