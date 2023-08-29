@@ -1,4 +1,4 @@
-import { Nav, NavLink, Bars, NavMenu, NavBtn } from "./HeaderElements";
+import { Nav, NavLink, Bars, NavMenu} from "./HeaderElements";
 const Header = ({ toggle }) => {
     return (
         <div className="Container" style={{ padding: 0 }}>

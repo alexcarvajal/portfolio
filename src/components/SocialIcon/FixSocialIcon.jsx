@@ -1,6 +1,8 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import styled from '@emotion/styled';
-import ScrollAnimation from 'react-animate-on-scroll';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const SocialContainer = styled.div`
   position: fixed;
@@ -53,23 +55,26 @@ const SocialContainer = styled.div`
 `;
 
 function FixSocialIcon() {
-    return (
-        <SocialContainer>
-            <ScrollAnimation animateIn="fadeIn" animateOnce={true} >
-                <ul>
-                    <li className="item" >
-                        <a href="https://www.linkedin.com/in/alex-carvajal-2542a7129/" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin />
-                        </a>
-                    </li>
-                    <li className="item">
-                        <a href="https://github.com/alexcarvajal" target="_blank" rel="noopener noreferrer">
-                            <FaGithub />
-                        </a>
-                    </li>
-                </ul>
-            </ScrollAnimation>
-        </SocialContainer>
-    )
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  }, []);
+  return (
+    <SocialContainer>
+      <div data-aos="fade-left"  >
+        <ul>
+          <li className="item" >
+            <a href="https://www.linkedin.com/in/alex-carvajal-2542a7129/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li className="item">
+            <a href="https://github.com/alexcarvajal" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </SocialContainer>
+  )
 }
 export default FixSocialIcon;

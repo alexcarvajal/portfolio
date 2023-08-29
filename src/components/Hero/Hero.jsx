@@ -5,16 +5,20 @@ import {
     HeroContainer,
     HeroWrapper,
     HeroLeft,
-   HeroRight,
-    Image, 
+    HeroRight,
+    Image,
 } from "./HeroElements";
+import Aos from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 import { TypeAnimation } from "react-type-animation";
-import  ScrollAnimation  from "react-animate-on-scroll";
 function Hero() {
     const [isOpen, setIsOpen] = useState(false);
     const [showSubtitle, setShowSubtitle] = useState(false);
- /*    const [showScrollDown, setShowScrollDown] = useState(false); */
-
+    /*    const [showScrollDown, setShowScrollDown] = useState(false); */
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
     const toggle = () => {
         setIsOpen(!isOpen);
     }
@@ -26,7 +30,7 @@ function Hero() {
             <HeroContainer>
                 <HeroWrapper>
                     <HeroLeft>
-                        <ScrollAnimation animateIn="fadeIn">
+                        <div data-aos="fade-up">
                             <TypeAnimation
                                 cursor={false}
                                 sequence={['Hey!, I\'m Alex.', () => setShowSubtitle(true)]}
@@ -59,26 +63,17 @@ function Hero() {
                                     repeat={Infinity}
                                 />
                             }
-                        </ScrollAnimation>
+                        </div>
                     </HeroLeft>
-                     <HeroRight>
-                        <ScrollAnimation animateIn="fadeIn">
-                           <Image
+                    <HeroRight>
+                        <div data-aos="fade-up">
+                            <Image
                                 src="/avatar.svg"
-                            /> 
-                        </ScrollAnimation>
+                            />
+                        </div>
                     </HeroRight>
                 </HeroWrapper>
-              {/*   {showScrollDown && <ScrollAnimation animateIn="flipInX" offset={0}>
-                    <ScrollDown to="projects" id="scrollDown">
-                       <ScrollLink>
-                            Scroll down
-                            <img
-                              src="/scroll-down.svg"
-                            />
-                        </ScrollLink>
-                    </ScrollDown>
-                </ScrollAnimation>} */}
+        
             </HeroContainer>
         </main>
     )

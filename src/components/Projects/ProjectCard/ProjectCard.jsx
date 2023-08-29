@@ -10,7 +10,6 @@ import {
 } from "./ProjectCardElements"
 import Aos from "aos";
 import "aos/dist/aos.css";
-import ScrollAnimation from "react-animate-on-scroll";
 function ProjectCard() {
     useEffect(() => {
         Aos.init({duration:1000})
