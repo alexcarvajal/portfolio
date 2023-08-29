@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { ProjectList } from "../../../data/ProjectData"
 import {
     Card,
@@ -7,12 +8,17 @@ import {
     TechCard,
     BtnGroup,
 } from "./ProjectCardElements"
+import Aos from "aos";
+import "aos/dist/aos.css";
 import ScrollAnimation from "react-animate-on-scroll";
 function ProjectCard() {
+    useEffect(() => {
+        Aos.init({duration:1000})
+    }, []);
     return (
         <>
             {ProjectList.map((list, index) => (
-                <ScrollAnimation animateIn="fadeInLeft" key={index}>
+                <div data-aos="fade-left"  key={index}>
                     <Card>
                         <CardLeft>
                             <img src={list.img} alt={list.name} />
@@ -49,7 +55,7 @@ function ProjectCard() {
                             </BtnGroup>
                         </CardRight>
                     </Card>
-                </ScrollAnimation>
+                </div>
             ))}
         </>
     )

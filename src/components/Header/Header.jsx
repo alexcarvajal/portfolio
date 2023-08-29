@@ -14,17 +14,16 @@ const Header = ({ toggle }) => {
                         Contact
                     </NavLink>
                 </NavMenu>
-                <NavBtn>
+               {/*  <NavBtn>
                     <a
                         className="btn PrimaryBtn"
-                        href="https://www.linkedin.com/in/alex-carvajal-2542a7129/"
+                        href="."
                         target="_blank"
                         rel="noopener noreferrer"
-                        
                     >
                         Download CV
                     </a>
-                </NavBtn>
+                </NavBtn> */}
                 <Bars onClick={toggle} />
             </Nav>
         </div>

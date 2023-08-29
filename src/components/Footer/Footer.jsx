@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
 
 const FooterSection = styled.div`
-  background-image: url(/footer_wave.svg);
+  background-image: url(/footer.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 250px;
+  height: 200px;
   position: relative;
 
   span {

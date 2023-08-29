@@ -5,8 +5,8 @@ import {
     HeroContainer,
     HeroWrapper,
     HeroLeft,
-  /*   HeroRight,
-    Image, */
+   HeroRight,
+    Image, 
 } from "./HeroElements";
 import { TypeAnimation } from "react-type-animation";
 import  ScrollAnimation  from "react-animate-on-scroll";
@@ -40,16 +40,16 @@ function Hero() {
                                     cursor={true}
                                     sequence={[
                                         500,
-                                        'A Frontend Developer.',
+                                        'A Frontend Developer...',
                                         1000,
-                                        'An Electronic and Engineering Student.',
+                                        'An Electronic and Engineering Student...',
                                         // 'I design and code beautifully simple things, and I love what I do.',
                                         1000,
-                                        'An innovative thinker.',
+                                        'An innovative thinker...',
                                         1000,
-                                        'A problem solver.',
+                                        'A problem solver...',
                                         1000,
-                                        'A team worker',
+                                        'A team worker...',
                                         1000,
 
                                     ]}
@@ -61,13 +61,13 @@ function Hero() {
                             }
                         </ScrollAnimation>
                     </HeroLeft>
-                    {/* <HeroRight>
+                     <HeroRight>
                         <ScrollAnimation animateIn="fadeIn">
                            <Image
-                                src="/man-svgrepo-com.svg"
+                                src="/avatar.svg"
                             /> 
                         </ScrollAnimation>
-                    </HeroRight> */}
+                    </HeroRight>
                 </HeroWrapper>
               {/*   {showScrollDown && <ScrollAnimation animateIn="flipInX" offset={0}>
                     <ScrollDown to="projects" id="scrollDown">
