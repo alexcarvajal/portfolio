@@ -91,6 +91,10 @@ export const stackList = [
     name: "Bootstrap",
   },
   {
+    img: "./tailwind-css.png",
+    name: "Tailwind CSS",
+  },
+  {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg",
     name: "Material UI",
   },
