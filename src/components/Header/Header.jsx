@@ -17,7 +17,7 @@ const Header = ({ toggle }) => {
                 <NavBtn>
                     <a
                         className="btn PrimaryBtn"
-                        href="/AlexCarvajal.pdf.pdf"
+                        href="/AlexFabianCarvajalFigueroa.pdf"
                         target="_blank"
                         rel="noopener noreferrer" 
                         download={true}
